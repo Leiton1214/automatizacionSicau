@@ -1,0 +1,28 @@
+12:24:45.125 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:25:05.987 INFO  AUTOMATION - Iniciar sesión con credenciales válidas
+12:25:05.987 INFO  AUTOMATION - Digitar Usuario
+12:25:06.369 INFO  AUTOMATION - Digitar Contraseña 
+12:25:06.482 INFO  AUTOMATION - Dar clic en el botón para ingresar
+12:25:08.531 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:25:29.410 INFO  AUTOMATION - Verificar elementos principales en la página de Login
+12:25:29.410 INFO  AUTOMATION - Verificar la página de Login Facebook
+12:25:30.696 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:25:51.669 INFO  AUTOMATION - Verificar mensaje de error para campo contraseña vacío
+12:25:51.669 INFO  AUTOMATION - Digitar Usuario
+12:25:51.741 INFO  AUTOMATION - Digitar Contraseña 
+12:25:51.773 INFO  AUTOMATION - Dar clic en el botón para ingresar
+12:25:52.884 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:26:13.876 INFO  AUTOMATION - Verificar mensaje de error para campo usuario vacío
+12:26:13.876 INFO  AUTOMATION - Digitar Usuario
+12:26:13.943 INFO  AUTOMATION - Digitar Contraseña 
+12:26:13.973 INFO  AUTOMATION - Dar clic en el botón para ingresar
+12:26:15.126 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:26:36.108 INFO  AUTOMATION - Verificar mensaje de error para contraseña incorrecta
+12:26:36.108 INFO  AUTOMATION - Digitar Usuario
+12:26:36.171 INFO  AUTOMATION - Digitar Contraseña 
+12:26:36.211 INFO  AUTOMATION - Dar clic en el botón para ingresar
+12:26:37.511 INFO  AUTOMATION - Navegar a la página de Saucedemo
+12:26:58.529 INFO  AUTOMATION - Verificar mensaje de error para usuario incorrecto
+12:26:58.529 INFO  AUTOMATION - Digitar Usuario
+12:26:58.586 INFO  AUTOMATION - Digitar Contraseña 
+12:26:58.637 INFO  AUTOMATION - Dar clic en el botón para ingresar
