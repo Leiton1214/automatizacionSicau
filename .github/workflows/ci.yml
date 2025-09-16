@@ -1,4 +1,4 @@
-name: Java CI - Maven + Selenium
+name: Java CI - Selenium TestNG
 
 on:
   push:
@@ -9,38 +9,31 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
 
-      - name: Set up JDK 17 and cache Maven deps
-        uses: actions/setup-java@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'maven'
+          cache: maven
 
-      # (Opcional) Asegura una versión específica de Chrome/Chromium
-      - name: Setup Chrome (opcional)
+      # Instalar Chrome (en runners de GitHub ya viene, pero forzamos por si hay cambios)
+      - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
         with:
           chrome-version: stable
 
-      - name: Build & run tests
+      - name: Run Maven tests
         run: mvn -B clean test
 
-      - name: Upload test reports (artifact)
+      - name: Upload TestNG reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-reports
+          name: testng-reports
           path: target/surefire-reports/*.xml
 
-      - name: Publish test results to GitHub (test reporter)
-        if: always()
-        uses: dorny/test-reporter@v2
-        with:
-          name: 'TestNG / Maven results'
-          path: 'target/surefire-reports/*.xml'
-          reporter: 'java-junit'
-          fail-on-error: false
