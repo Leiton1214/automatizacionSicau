@@ -33,6 +33,10 @@ public class LoginPage extends BasePage {
         find(loginType).click();
 
         Logs.info("Fin de prueba");
+        Logs.info("Fin de pruebas");
+        Logs.info("Fin de pruebas");
+        Logs.info("Fin de pruebas");
+        Logs.info("Fin de pruebas");
     }
 
 
