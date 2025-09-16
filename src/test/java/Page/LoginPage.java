@@ -31,6 +31,8 @@ public class LoginPage extends BasePage {
 
         Logs.info("Dar clic en el botón para ingresar");
         find(loginType).click();
+
+        Logs.info("Fin de prueba");
     }
 
 
