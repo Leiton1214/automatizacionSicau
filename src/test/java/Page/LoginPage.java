@@ -10,8 +10,7 @@ public class LoginPage extends BasePage {
     private final By usernameType = By.xpath("//*[@id=\"user-name\"]");
     private final By passwordType = By.xpath("//*[@id=\"password\"]");
     private final By loginType = By.xpath("//*[@id=\"login-button\"]");
-    //private final By errorMessage = By.cssSelector("");
-
+    
     @Override
     public void verificarPagina() {
         Logs.info("Verificar la página de Login Facebook");
