@@ -10,10 +10,10 @@ public class LoginPage extends BasePage {
     private final By usernameType = By.xpath("//*[@id=\"user-name\"]");
     private final By passwordType = By.xpath("//*[@id=\"password\"]");
     private final By loginType = By.xpath("//*[@id=\"login-button\"]");
-    
+
     @Override
     public void verificarPagina() {
-        Logs.info("Verificar la página de Login Facebook");
+        Logs.info("Verificar la página de Login de saucedemo");
 
         final var softAssert = new SoftAssert();
         softAssert.assertTrue(find(usernameType).isDisplayed());

@@ -41,7 +41,7 @@ public class LoginTest extends BaseTest {
     public void verificarMensajeErrorUsuarioTest() {
         Logs.info("Verificar mensaje de error para usuario incorrecto");
         loginPage.iniciarSesion("", "Juanse1214!!");
-        //loginPage.verificarMensajeError("Epic sadface: Sorry, this user has been locked out.");
+        
     }
 
     @Test
@@ -50,7 +50,7 @@ public class LoginTest extends BaseTest {
     public void verificarMensajeErrorContraseñaTest() {
         Logs.info("Verificar mensaje de error para contraseña incorrecta");
         loginPage.iniciarSesion("fabyusuga12@gmail.com", "guarneijijoi");
-        //loginPage.verificarMensajeError("Epic sadface: Username and password do not match any user in this service");
+
     }
 
     @Test
@@ -59,7 +59,7 @@ public class LoginTest extends BaseTest {
     public void verificarMensajeErrorCampoUsuarioVacioTest() {
         Logs.info("Verificar mensaje de error para campo usuario vacío");
         loginPage.iniciarSesion("", "");
-        //loginPage.verificarMensajeError("Epic sadface: Username is required");
+
     }
 
     @Test
@@ -68,6 +68,6 @@ public class LoginTest extends BaseTest {
     public void verificarMensajeErrorCampoContraseñaVacioTest() {
         Logs.info("Verificar mensaje de error para campo contraseña vacío");
         loginPage.iniciarSesion("fabyusuga12@gmail.com", "");
-        //loginPage.verificarMensajeError("Epic sadface: Password is required");
+
     }
 }
