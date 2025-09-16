@@ -2,7 +2,12 @@ name: Java CI - Selenium TestNG
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - feature/**   # 👈 Se ejecuta en cualquier rama que empiece con feature/
+  pull_request:       # 👈 También se ejecuta cuando abras un PR hacia main
+    branches:
+      - main
 
 jobs:
   build-and-test:
@@ -35,5 +40,3 @@ jobs:
       with:
         name: allure-report
         path: target/site/allure-maven-plugin
-
-
