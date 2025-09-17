@@ -33,19 +33,6 @@ public class LoginPage extends BasePage {
         find(loginType).click();
 
         Logs.info("Fin de prueba");
-        Logs.info("Fin de pruebas");
-        Logs.info("Fin de pruebas");
-        Logs.info("Fin de pruebas");
-        Logs.info("Fin de pruebas");
+
     }
-
-
-    /*public void verificarMensajeError(String texto) {
-        Logs.info("Validar mensaje de error");
-
-        final var softAssert = new SoftAssert();
-        softAssert.assertTrue(find(errorMessage).isDisplayed());
-        softAssert.assertEquals(find(errorMessage).getText(), texto);
-        softAssert.assertAll();
-    }*/
 }
