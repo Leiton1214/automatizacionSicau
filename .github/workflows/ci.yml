@@ -49,8 +49,8 @@ jobs:
           to: ${{ secrets.EMAIL_USERNAME }}
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
           body: |
-            ❌ El `pipeline` falló en la rama ${{ github.ref_name }}.
-            🔗 Ver logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ❌   El `pipeline` falló en la rama ${{ github.ref_name }}.
+            🔗   Ver logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
       # 🔔 Notificación si pasa
       - name: Send Email on Success
@@ -65,5 +65,5 @@ jobs:
           to: ${{ secrets.EMAIL_USERNAME }}
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
           body: |
-            ✅ El `pipeline` pasó correctamente en la rama ${{ github.ref_name }}.
-            🔗 Ver reportes: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ✅   El `pipeline` pasó correctamente en la rama ${{ github.ref_name }}.
+            🔗   Ver reportes: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
